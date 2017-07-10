@@ -85,8 +85,8 @@ Brief summary/description of the plugin.
 
     void doWithApplicationContext() {
         log.trace("doWithApplicationContext")
-        def SpringSecurityOauth2BaseService oAuth2BaseService = grailsApplication.mainContext.getBean('springSecurityOauth2BaseService') as SpringSecurityOauth2BaseService
-        def MercadoLivreOAuth2ProviderService mercadoLivreOAuth2ProviderService = grailsApplication.mainContext.getBean('mercadoLivreOAuth2ProviderService') as MercadoLivreOAuth2ProviderService
+        SpringSecurityOauth2BaseService oAuth2BaseService = grailsApplication.mainContext.getBean('springSecurityOauth2BaseService') as SpringSecurityOauth2BaseService
+        MercadoLivreOAuth2ProviderService mercadoLivreOAuth2ProviderService = grailsApplication.mainContext.getBean('mercadoLivreOAuth2ProviderService') as MercadoLivreOAuth2ProviderService
         try {
             oAuth2BaseService.registerProvider(mercadoLivreOAuth2ProviderService)
         } catch (OAuth2Exception exception) {

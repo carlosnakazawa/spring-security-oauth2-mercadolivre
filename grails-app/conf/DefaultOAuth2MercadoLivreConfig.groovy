@@ -4,7 +4,7 @@
 security {
     oauth2 {
         providers {
-            uber {
+            mercadolivre {
                 successUri = "/oauth2/mercadolivre/success"
                 failureUri = "/oauth2/mercadolivre/failure"
                 callback = "/oauth2/mercadolivre/callback"
